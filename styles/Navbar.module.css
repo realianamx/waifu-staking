@@ -1,0 +1,122 @@
+/* Navbar.module.css */
+
+/* Default styles */
+.navbar {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Position at the left of the viewport */
+    width: 100%; /* Full width */
+    display: flex;
+    align-items: center; /* Center the content vertically */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    background-color: rgba(10, 10, 10, 0); /* Semi-transparent background color */
+}
+
+.logo {
+    width: 75px; /* Adjust the width of the logo */
+    height: 75px; /* Adjust the height of the logo */
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    margin-right: 20px; /* Add some spacing between the logo and the heading */
+}
+
+.logo:first-child {
+    background-image: url("../public/logo.png"); /* URL to your first logo image */
+}
+
+.logo:nth-child(2) {
+    background-image: url("../public/pixelcut-export.png"); /* URL to your second logo image */
+    margin-right: 40px; /* Double the margin for the second logo */
+}
+
+.heading {
+    color: #ff66cc; /* Text color */
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.navbar a {
+    font-size: 22px; /* Adjust font size as needed */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 9px; /* Adjust font size as needed */
+    }
+
+    .logo:first-child {
+        display: none; /* Hide the first logo */
+    }
+}
+
+/* Media query for screens with a width between 601px and 1024px (tablet) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar h1 {
+        color: #ecf0f1;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+}
+
+/* Media query for screens with a width of 1025px or more (desktop) */
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar h1 {
+        color: #ecf0f1;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+}
+/* Media query for screens with a width between 1025px and 1359px */
+@media (min-width: 1025px) and (max-width: 1359px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar h1 {
+        color: #ecf0f1;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+/* Media query for screens with a width between 1360px and 1439px */
+@media (min-width: 1360px) and (max-width: 1439px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar h1 {
+        color: #ecf0f1;
+        font-size: 2.5rem; /* Adjust font size as needed */
+        margin-bottom: 0;
+    }
+}
+
+/* Media query for screens with a width between 1440px and 1979px */
+@media (min-width: 1440px) and (max-width: 1979px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar h1 {
+        color: #ecf0f1;
+        font-size: 3rem; /* Adjust font size as needed */
+        margin-bottom: 0;
+    }
+}
+
+/* Media query for screens with a width of 1980px or more */
+@media (min-width: 1980px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar h1 {
+        color: #ecf0f1;
+        font-size: 3.5rem; /* Adjust font size as needed */
+        margin-bottom: 0;
+    }
+}
